@@ -23,3 +23,5 @@ Imports:
     ggplot2 (>= 4.0.0),
     S7,
     scales
+URL: https://github.com/drcaprosser/chrisplot
+BugReports: https://github.com/drcaprosser/chrisplot/issues
