@@ -1,0 +1,25 @@
+Package: chrisplot
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Chris", "Prosser",
+      email = "chris.prosser@rhul.ac.uk",
+      role = c("aut", "cre")
+    )
+  )
+Description: A little package containing some ggplot2 themes and helper functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests: 
+    showtext,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    ggplot2 (>= 4.0.0),
+    S7,
+    scales
