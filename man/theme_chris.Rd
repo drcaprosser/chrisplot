@@ -12,7 +12,8 @@ theme_chris(
   text_col = "#0F172A",
   grid_col = "#e6edf4",
   strip_bg = "#d4e0ec",
-  strip_col = "#0F172A"
+  strip_col = "#d4e0ec",
+  box_col = "#d4e0ec"
 )
 }
 \arguments{
@@ -31,6 +32,8 @@ theme_chris(
 \item{strip_bg}{facet strip background colour}
 
 \item{strip_col}{facet strip outline colour}
+
+\item{box_col}{plot border colour}
 }
 \description{
 My pretty ggplot theme (with theme-level palettes; ggplot2 >= 4.0.0)

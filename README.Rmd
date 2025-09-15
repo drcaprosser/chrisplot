@@ -10,39 +10,110 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "100%",
+  dpi=300,
   dev = "ragg_png"
 )
+
+library(ggplot2)
+library(chrisplot)
+
 ```
 
 # chrisplot
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-This is a collection of themes, palettes, and helper functions I use to make plots using `ggplot2`.  
+This is a collection of themes, palettes, and helper functions I use to make plots using `ggplot2`.
 
 ## Installation
 
-You can install the development version of chrisplot like so:
+I made this for myself, but if you want, you can install chrisplot like so:
 
-## Install
-
-```r
+``` r
 # install.packages("remotes")
 
 remotes::install_github("drcaprosser/chrisplot")
+```
+
+## Themes
+
+```{r themes}
+
+
+mtcars2 <- within(mtcars, {
+  vs <- factor(vs, labels = c("V-shaped", "Straight"))
+  am <- factor(am, labels = c("Automatic", "Manual"))
+  cyl  <- factor(cyl)
+  gear <- factor(gear)
+})
+
+p1 <- ggplot(mtcars2) +
+  geom_point(aes(x = wt, y = mpg, colour = gear)) +
+  labs(
+    title = "Fuel economy declines as weight increases",
+    subtitle = "(1973-74)",
+    caption = "Data from the 1974 Motor Trend US magazine.",
+    tag = "Figure 1",
+    x = "Weight (1000 lbs)",
+    y = "Fuel economy (mpg)",
+    colour = "Gears"
+  )
+
+# theme_chris
+p1 + theme_chris()
+
+# theme_academic
+p1 + theme_academic()
+
+# Facetting 
+
+p2 <- p1 + facet_grid(vs ~ am)
+
+p2 + theme_chris()
+
+p2 + theme_academic()
+
+
 
 ```
 
-## Example
+## Palettes
 
-```{r example}
-library(ggplot2)
-library(chrisplot)
+A series of 'optimial' colour palettes created by [Anton Tsitsulin](https://tsitsul.in/blog/coloropt/). By default `chrisplot` used a slightly reordered version of Tsitsulin's 12 colour normal palette (reordered because mostly I have plots with only a couple of categories and I like the red and blue colours better than the yellow). I also like the fancy palette. I don't really use the others but included them for completeness.
 
-ggplot(mtcars, aes(wt, mpg, colour = factor(cyl))) +
- geom_point() +
- theme_chris() +
-  chris_note()
+```{r palettes}
+p2 <- ggplot(mtcars2) +
+  geom_point(aes(x = wt, y = mpg, colour = interaction(am,cyl))) +
+  labs(
+    title = "Fuel economy declines as weight increases",
+    subtitle = "(1973-74)",
+    caption = "Data from the 1974 Motor Trend US magazine.",
+    tag = "Figure 1",
+    x = "Weight (1000 lbs)",
+    y = "Fuel economy (mpg)",
+    colour = "Transmission/Cylinders"
+  ) +
+  theme_academic()
+
+
+# Default chris_palette (reorded opt_norm_palette_12)
+p2 
+
+# Normal palette
+p2 + scale_colour_manual(values = opt_norm_palette_6)
+
+# Bright palette
+p2 + scale_colour_manual(values = opt_bright_palette)
+
+# Dark palette
+p2 + scale_colour_manual(values = opt_dark_palette)
+
+# Fancy palette
+p2 + scale_colour_manual(values = opt_fancy_palette)
+
+# Tarnish palette
+p2 + scale_colour_manual(values = opt_tarnish_palette)
 
 ```

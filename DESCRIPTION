@@ -1,6 +1,6 @@
 Package: chrisplot
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Personal themes and palettes for ggplot
 Version: 0.1.0
 Authors@R: c(
     person(

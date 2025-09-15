@@ -5,3 +5,9 @@
 .httr-oauth
 .DS_Store
 .quarto
+dev/
+scratch/
+local/
+.Renviron
+.Rprofile
+devtools.R
