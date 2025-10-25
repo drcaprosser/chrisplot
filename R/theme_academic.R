@@ -6,7 +6,7 @@
 #' @param ... Forwarded to [theme_chris()] (e.g., `title_family`, `base_size`, etc.)
 #' @export
 theme_academic <- function(
-    base_family = "Inter",
+    base_family = "Source Sans 3",
     base_size   = 11,
     ...,
     bg_panel    = "white",

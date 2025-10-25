@@ -2,10 +2,10 @@
 % Please edit documentation in R/theme_chris.R
 \name{theme_chris}
 \alias{theme_chris}
-\title{My pretty ggplot theme (with theme-level palettes; ggplot2 >= 4.0.0)}
+\title{Custom ggplot theme}
 \usage{
 theme_chris(
-  base_family = "Inter",
+  base_family = "Source Sans 3",
   base_size = 11,
   bg_panel = "#f8fafc",
   bg_plot = "#f8fafc",
@@ -36,5 +36,5 @@ theme_chris(
 \item{box_col}{plot border colour}
 }
 \description{
-My pretty ggplot theme (with theme-level palettes; ggplot2 >= 4.0.0)
+My pretty ggplot theme, based on \code{theme_bw()}, with theme-level palettes (ggplot2 >= 4.0.0)
 }

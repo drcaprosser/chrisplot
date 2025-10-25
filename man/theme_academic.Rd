@@ -5,7 +5,7 @@
 \title{A plain version of theme_chris}
 \usage{
 theme_academic(
-  base_family = "Inter",
+  base_family = "Source Sans 3",
   base_size = 11,
   ...,
   bg_panel = "white",

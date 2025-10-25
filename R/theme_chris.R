@@ -13,7 +13,7 @@
 #' @param box_col plot border colour
 #' @export
 theme_chris <- function(
-    base_family = "Inter",
+    base_family = "Source Sans 3",
     base_size   = 11,
     bg_panel    = "#f8fafc",
     bg_plot     = "#f8fafc",
