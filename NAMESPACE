@@ -2,6 +2,12 @@
 
 export(chris_note)
 export(chris_palette)
+export(geom_errorbar)
+export(geom_errorbarh)
+export(geom_line)
+export(geom_linerange)
+export(geom_path)
+export(geom_segment)
 export(opt_bright_palette)
 export(opt_dark_palette)
 export(opt_fancy_palette)

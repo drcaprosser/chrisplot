@@ -12,11 +12,11 @@ theme_academic <- function(
     bg_panel    = "white",
     bg_plot     = "white",
     text_col    = "black",
-    grid_col    = "grey70",
+    grid_col    = "grey90",
     strip_bg    = NA,
     strip_col   = NA,
-    box_col     = "grey30"
-) {
+    box_col     = "grey70"
+){
   theme_chris(
     base_family = base_family,
     base_size   = base_size,
@@ -30,3 +30,4 @@ theme_academic <- function(
     box_col     = box_col
   )
 }
+

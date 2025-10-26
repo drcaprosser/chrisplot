@@ -2,10 +2,12 @@
 % Please edit documentation in R/update_geom_defaults.R
 \name{use_chris_geom_defaults}
 \alias{use_chris_geom_defaults}
-\title{Sensible geom defaults}
+\title{Update geom defaults to nicer defaults
+Use \code{reset_geom_defaults()} to reset}
 \usage{
 use_chris_geom_defaults()
 }
 \description{
-Sensible geom defaults
+Update geom defaults to nicer defaults
+Use \code{reset_geom_defaults()} to reset
 }

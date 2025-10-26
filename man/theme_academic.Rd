@@ -11,10 +11,10 @@ theme_academic(
   bg_panel = "white",
   bg_plot = "white",
   text_col = "black",
-  grid_col = "grey70",
+  grid_col = "grey90",
   strip_bg = NA,
   strip_col = NA,
-  box_col = "grey30"
+  box_col = "grey70"
 )
 }
 \arguments{

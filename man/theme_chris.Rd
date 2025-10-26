@@ -10,7 +10,7 @@ theme_chris(
   bg_panel = "#f8fafc",
   bg_plot = "#f8fafc",
   text_col = "#0F172A",
-  grid_col = "#e6edf4",
+  grid_col = "#d4e0ec",
   strip_bg = "#d4e0ec",
   strip_col = "#d4e0ec",
   box_col = "#d4e0ec"
