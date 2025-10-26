@@ -28,6 +28,7 @@ theme_chris <- function(
     ggplot2::theme(
       # backgrounds and grids
       plot.background   = ggplot2::element_rect(fill = bg_plot,  colour = NA),
+      plot.margin = ggplot2::margin(t = 2, r = 2, b = 2, l = 2),
       panel.background  = ggplot2::element_rect(fill = bg_panel, colour = NA),
       panel.spacing     = grid::unit(1.0, "lines"),
       panel.border      = ggplot2::element_rect(colour = box_col, fill = NA, linewidth = .5),
@@ -49,6 +50,8 @@ theme_chris <- function(
       legend.title     = ggplot2::element_text(face = "bold"),
       legend.key       = ggplot2::element_rect(fill = bg_panel, colour = NA),
       legend.background = ggplot2::element_rect(fill = bg_panel, colour = NA),
+      legend.margin = ggplot2::margin(t = 0, r = 0, b = 0, l = 0),
+      legend.box.spacing = grid::unit(5, "pt"),
       # strips
       strip.background = ggplot2::element_rect(fill = strip_bg, colour = strip_col),
       strip.text       = ggplot2::element_text(face = "bold", size = ggplot2::rel(1)),
