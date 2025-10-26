@@ -50,7 +50,7 @@ theme_chris <- function(
       legend.title     = ggplot2::element_text(face = "bold"),
       legend.key       = ggplot2::element_rect(fill = bg_panel, colour = NA),
       legend.background = ggplot2::element_rect(fill = bg_panel, colour = NA),
-      legend.margin = ggplot2::margin(t = 0, r = 0, b = 0, l = 0),
+      legend.margin = ggplot2::margin(t = 2, r = 2, b = 2, l = 2),
       legend.box.spacing = grid::unit(5, "pt"),
       # strips
       strip.background = ggplot2::element_rect(fill = strip_bg, colour = strip_col),
