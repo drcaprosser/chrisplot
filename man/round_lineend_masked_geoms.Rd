@@ -8,6 +8,7 @@
 \alias{geom_errorbar}
 \alias{geom_errorbarh}
 \alias{geom_linerange}
+\alias{geom_smooth}
 \title{Masked line geoms with round line ends by default}
 \usage{
 geom_line(..., lineend = "round")
@@ -21,6 +22,8 @@ geom_errorbar(..., lineend = "round")
 geom_errorbarh(..., lineend = "round")
 
 geom_linerange(..., lineend = "round")
+
+geom_smooth(..., lineend = "round")
 }
 \arguments{
 \item{...}{Passed to the underlying \code{ggplot2} geom.}
@@ -43,5 +46,6 @@ ggplot(economics, aes(date, unemploy)) + geom_line(size = 1.2)
 }
 \seealso{
 \code{\link[ggplot2:geom_path]{ggplot2::geom_line()}}, \code{\link[ggplot2:geom_path]{ggplot2::geom_path()}}, \code{\link[ggplot2:geom_segment]{ggplot2::geom_segment()}},
-\code{\link[ggplot2:geom_linerange]{ggplot2::geom_errorbar()}}, \code{\link[ggplot2:geom_linerange]{ggplot2::geom_errorbarh()}}, \code{\link[ggplot2:geom_linerange]{ggplot2::geom_linerange()}}
+\code{\link[ggplot2:geom_linerange]{ggplot2::geom_errorbar()}}, \code{\link[ggplot2:geom_linerange]{ggplot2::geom_errorbarh()}}, \code{\link[ggplot2:geom_linerange]{ggplot2::geom_linerange()}} ,
+\code{\link[ggplot2:geom_smooth]{ggplot2::geom_smooth()}}
 }

@@ -4,7 +4,7 @@
 #' `lineend = "round"` by default for nicer line caps.
 #'
 #' @name round_lineend_masked_geoms
-#' @aliases geom_line geom_path geom_segment geom_errorbar geom_errorbarh geom_linerange
+#' @aliases geom_line geom_path geom_segment geom_errorbar geom_errorbarh geom_linerange geom_smooth
 #' @param ... Passed to the underlying `ggplot2` geom.
 #' @param lineend One of `"round"`, `"butt"`, or `"square"`. Defaults to `"round"`.
 #'
@@ -13,7 +13,8 @@
 #' default for `lineend`. Use `ggplot2::geom_*()` explicitly to bypass masking.
 #'
 #' @seealso [ggplot2::geom_line()], [ggplot2::geom_path()], [ggplot2::geom_segment()],
-#'   [ggplot2::geom_errorbar()], [ggplot2::geom_errorbarh()], [ggplot2::geom_linerange()]
+#'   [ggplot2::geom_errorbar()], [ggplot2::geom_errorbarh()], [ggplot2::geom_linerange()] ,
+#'   [ggplot2::geom_smooth()]
 #'
 #' @examples
 #' \dontrun{
@@ -57,3 +58,10 @@ geom_errorbarh <- function(..., lineend = "round") {
 geom_linerange <- function(..., lineend = "round") {
   ggplot2::geom_linerange(..., lineend = lineend)
 }
+
+#' @rdname round_lineend_masked_geoms
+#' @export
+geom_smooth <- function(..., lineend = "round") {
+  ggplot2::geom_smooth(..., lineend = lineend)
+}
+
