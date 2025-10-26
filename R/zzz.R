@@ -12,14 +12,14 @@
     list(S7::new_S3_class("chris_note"), class_ggplot)
   ) <- function(object, plot, ...) {
     .chris_note_update(object, plot)
-
- use_chris_geom_defaults()
-
   }
+
+  use_chris_geom_defaults()
+
 }
 
 
-.onLoad <- function(libname, pkgname) {
+.onAttach <- function(libname, pkgname) {
 
   packageStartupMessage("chrisplot:")
   packageStartupMessage("Masking ggplot2 geoms to default lineend = 'round'.")
