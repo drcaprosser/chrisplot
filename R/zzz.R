@@ -25,6 +25,21 @@
   packageStartupMessage("Masking ggplot2 geoms to default lineend = 'round'.")
   packageStartupMessage("Updating geom defaults")
 
+  # Soft dependency: only try if available; otherwise tell the user plainly.
+  if (!requireNamespace("sysfonts", quietly = TRUE) ||
+      !requireNamespace("showtext", quietly = TRUE)) {
+    packageStartupMessage(
+      "chrisplot: install 'sysfonts' and 'showtext' to enable Source Sans 3 in plots.\n",
+      "  install.packages(c('sysfonts','showtext'))"
+    )
+    return(invisible())
+  }
+  # Strict: error if fonts missing
+  tryCatch(
+    register_source_sans(),
+    error = function(e) stop("chrisplot: ", conditionMessage(e), call. = FALSE)
+  )
+
 }
 
 

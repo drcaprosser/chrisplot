@@ -16,12 +16,13 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Suggests: 
-    showtext,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
     ggplot2 (>= 4.0.0),
     S7,
-    scales
+    scales,
+    sysfonts,
+    showtext
 URL: https://github.com/drcaprosser/chrisplot
 BugReports: https://github.com/drcaprosser/chrisplot/issues
