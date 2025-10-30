@@ -79,13 +79,13 @@ p2 + theme_academic()
 
 ## Palettes
 
-A series of ‘optimial’ colour palettes created by [Anton
-Tsitsulin](https://tsitsul.in/blog/coloropt/). By default `chrisplot`
-used a slightly reordered version of Tsitsulin’s 12 colour normal
-palette (reordered because mostly I have plots with only a couple of
-categories and I like the red and blue colours better than the yellow).
-I also like the fancy palette. I don’t really use the others but
-included them for completeness.
+The package includes a series of ‘optimial’ colour palettes created by
+[Anton Tsitsulin](https://tsitsul.in/blog/coloropt/). By default
+`chrisplot` used a slightly reordered version of Tsitsulin’s 12 colour
+normal palette (reordered because mostly I have plots with only a couple
+of categories and I like the red and blue colours better than the
+yellow). I also like the fancy palette. I don’t really use the others
+but included them for completeness.
 
 ``` r
 p2 <- ggplot(mtcars2) +
