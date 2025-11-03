@@ -44,7 +44,7 @@ theme_chris <- function(
       # axes
       axis.title       = ggplot2::element_text(),
       axis.text        = ggplot2::element_text(),
-      axis.ticks = ggplot2::element_line(colour = box_col, linewidth = 0.2, lineend = "round"),
+      axis.ticks = ggplot2::element_line(colour = box_col, lineend = "round"),
       # legend
       legend.position  = "bottom",
       legend.title     = ggplot2::element_text(face = "bold"),
